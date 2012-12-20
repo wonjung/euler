@@ -9,7 +9,6 @@ sundays = 0
 
 while ts != te do
   sundays = sundays + 1 if ts.sunday? && ts.strftime('%d') == '01'
-  puts ts if ts.sunday? && ts.strftime('%d') == '01' && ts.strftime('%m') == '01'
   ts = ts.succ
 end
 
